@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/indigo_black">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:textSize="@dimen/order_item_text_size"
+            android:layout_height="wrap_content"
+            android:id="@+id/textViewCode"
+            android:textColor="@android:color/white"
+            android:layout_margin="@dimen/order_item_text_view_margin"
+            android:text="@string/id"/>
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/textViewCodeValue"
+            android:textColor="@android:color/white"
+            android:layout_margin="@dimen/order_item_text_view_margin"
+            android:textSize="@dimen/order_item_text_size"
+            android:text="513"/>
+
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/textViewDescription"
+        android:textColor="@android:color/white"
+        android:layout_margin="@dimen/order_item_text_view_margin"
+        android:textSize="@dimen/order_item_text_size"
+        android:text="aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:textSize="@dimen/order_item_text_size"
+            android:layout_height="wrap_content"
+            android:id="@+id/textViewItemQuantity"
+            android:textColor="@android:color/white"
+            android:layout_margin="@dimen/order_item_text_view_margin"
+            android:text="@string/quantity"/>
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/textViewItemQuantityValue"
+            android:textColor="@android:color/white"
+            android:layout_margin="@dimen/order_item_text_view_margin"
+            android:textSize="@dimen/order_item_text_size"
+            android:layout_weight="1"
+            android:text="2"/>
+
+
+        <EditText
+            android:layout_width="80dp"
+            android:layout_height="30dp"
+            android:background="@color/edit_text_gray"
+            android:textColor="@android:color/black"
+            android:inputType="number"
+            android:digits="0123456789"
+            android:id="@+id/editTextQuantityProgress"/>
+
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/add"
+            android:id="@+id/imageButtonAdd"
+            android:background="@color/indigo_black"/>
+
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/subtract"
+            android:id="@+id/imageButtonSubtract"
+            android:background="@color/indigo_black"/>
+
+    </LinearLayout>
+
+
+
+
+</LinearLayout>
